@@ -133,7 +133,6 @@ interface Room {
      *  * FIND_SOURCES
      *  * FIND_SOURCES_ACTIVE
      *  * FIND_DROPPED_RESOURCES
-     *  * FIND_DROPPED_ENERGY
      *  * FIND_STRUCTURES
      *  * FIND_MY_STRUCTURES
      *  * FIND_HOSTILE_STRUCTURES
@@ -278,7 +277,7 @@ interface Room {
 }
 
 interface RoomConstructor extends _Constructor<Room> {
-    new (id: string): Room;
+    new(id: string): Room;
 
     Terrain: RoomTerrainConstructor;
 
